@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ポートフォリオ</title>
+	<!-- ブラウザ設定の初期化 -->
+	<link rel="stylesheet" href="css/ress.css">
+	<!-- css読み込み -->
+	<!-- スマホ -->
+	<link rel="stylesheet" href="css/sp.css" media="only screen and (max-width: 640px)">
+	<!-- タブレット -->
+	<link rel="stylesheet" href="css/tb.css" media="only screen and (min-width: 641px) and (max-width: 1039px)" >
+	<!-- デスクトップ -->
+	<link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 1040px)">
+</head>
+
+<body>
+	<!-- ヘッダー -->
+	<header class="wrapper">
+		<div id="header-logo">
+			<a href="index.html"><img src="img/header-logo.svg"></a>
+		</div>
+		
+		<nav>
+			<ul>
+				<li><a href="work.html">Works.</a></li>
+				<li><a href="about.html">About.</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- メイン領域 -->	
+	<div class="main">
+		<img src="img/mainvisual_b.png">
+	</div>
+	
+	<h2 id="midashi">
+		Works.
+	</h2>
+	<div class="container">		
+		<div class="sakuhin wrapper">
+			<h3>Web</h3>
+			<div class="panya">
+				<div class="left-side">
+					<a href="work.html#takita"><img src="img/panmain.png"></a>
+				</div>
+				<div class="right-side">
+					<h4><php>TAKITA BEKARY</php></h4>
+					<p>Theme | ベーカリーサイト</p>
+					<ul>
+						<li>制作年月:2021/7</li>
+						<li>制作期間:2week</li>
+						<li>制作環境:Illustrator/Photoshop/HTML/CSS</li>
+					</ul>
+				</div>
+			</div>
+				<div class="portfolio">
+					<div class="left-side">
+						<a href="work.html#portfolio"><img src="img/mainvisu.png"></a>
+					</div>
+					<div class="right-side">
+						<h4>Portfolio</h4>
+						<p>Theme | ポートフォリオサイト</p>
+						<ul>
+							<li>制作年月:2021/11</li>
+							<li>制作期間:2week</li>
+							<li>制作環境:Illustrator/Photoshop/HTML/CSS</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="wrapper">
+			<div class="container">
+				<div id="fixed-btn" class="absolute show">
+					<a href="#" onclick="$('html,body').animate({ scrollTop: 0 }); return false;" id="return-top">
+						<p>Top</p>
+					</a>
+				</div>
+				<ul>
+					<li><a href="work.html">Work.</a></li>
+					<li><a href="about.html">About.</a></li>
+				</ul>
+				<p>
+					<small>Portfolio by Chihiro Matsuda</small>
+				</p>
+			</div>
+			<!-- フッター -->
+		</footer>
+		<!-- jquery読み込み -->
+		<script type="text/javascript"
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+   // スクロールしたときに実行
+   $(window).scroll(function () {
+      // 目的のスクロール量を設定(px)
+      var TargetPos = 350;
+      // 現在のスクロール位置を取得
+      var ScrollPos = $(window).scrollTop();
+      // 現在位置が目的のスクロール量に達しているかどうかを判断
+      if( ScrollPos >= TargetPos) {
+         // 達していれば表示
+         $("#fixed-btn").fadeIn();
+     }
+     else {
+         // 達していなければ非表示
+         $("#fixed-btn").fadeOut();
+     }
+ });
+});
+</script>
+</body>
+</html>
