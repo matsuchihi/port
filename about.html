@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ポートフォリオ</title>
+	<!-- ブラウザ設定の初期化 -->
+	<link rel="stylesheet" href="css/ress.css">
+	<!-- css読み込み -->
+	<!-- スマホ -->
+	<link rel="stylesheet" href="css/sp.css" media="only screen and (max-width: 640px)">
+	<!-- タブレット -->
+	<link rel="stylesheet" href="css/tb.css" media="only screen and (min-width: 641px) and (max-width: 1039px)" >
+	<!-- デスクトップ -->
+	<link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 1040px)">
+</head>
+<body>
+	<!-- ヘッダー -->
+	<header class="wrapper">
+		<div id="header-logo">
+			<a href="index.html"><img src="img/header-logo.svg"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="work.html">Works.</a></li>
+				<li><a href="about.html">About.</a></li>
+			</ul>
+
+		</nav>
+	</header>
+<!-- メイン領域 -->
+<div class="container"> 
+   <div class="about">
+	<h1>About.</h1>
+	<div id="profile">	
+	  <div id="profile-photo">
+		<img src="img/Portfolioshashin.png">
+	  </div>
+	  <div id="profile-concept">
+		<h2>松田千博</h2>	
+		<h3>Chihiro Matsuda</h3>
+		<p id="kotoba">"これだ"と思ってもらうために</p>
+		<p>webサイトの訪れる人には様々な目的があると思います。ターゲット層に応じて、デザインやレイアウトを柔軟に変えていく。そして、webサイトに訪れた人が"そうそう!""これこれ!"と心の中で思ってもらえるように、サイト制作に携わっていきたいと考えています。</p>
+	  </div>
+   </div>
+   
+		<h4 class="profile-head">Profile</h4>
+	<div id="profile2">
+		<h5>生まれ～高校時代</h5>
+		<p>1989年12月12日、宮崎県生まれ。
+			<span>小学校高学年～高校まで続けてきたバスケットによって、基礎的な体力を身につけた。</span>
+			<span>
+				チームとして輝かしい成績は残せなかったものの、地道に努力し続けることの大切さを学んだ。
+			</span>
+		</p>
+		<h5>自動車販売会社時代</h5>
+		<p>
+			世代や価値観の違う人々と話すことにより、
+			<span>知見を広めたいという思いから、
+			営業職に就く。
+				約1年半とう短い期間だったが、
+			</span>
+			<span>上司の助けもあり、
+			1週間に3台の新車受注を達成できた月もあった。
+			</span>
+		</p>
+		<h5>身体障害者の生活介助時代</h5>
+			<p>
+					昔から穏やかな性格であり、周りの知人からも"福祉の仕事が向いてる"と
+					<span>アドバイスを頂いたこともあり、身体障害者の生活介助に携わる。</span>
+					<span>未経験だった為、覚えることも多々あったが、2～3年ほどで、担当できる利用者の人数が全職員の中で一番多くなった。
+				</span>	
+			</p>
+		<h5>現在</h5>
+			<p>
+					これまで営業や介助の仕事を通じて、人と接する仕事に携わってきた。
+					<span>しかし、これからはITに関する知識・スキルを身につけないと時代の波に乗り切れないと思い、
+					</span>
+					<span>web業界での就職を目指している。
+					まず、職業訓練校にてweb制作の基礎を学び、
+				</span>
+				<span>卒業後は既存webサイトの模写コーディングを行い実践的スキルの習得を目指している。
+				</span>
+			</p>
+	</div>
+</div>
+			
+
+			<h4 class="profile-head">Skills</h4>
+		<ul id="skills">	
+			<li>
+			<img src="img/icon-jquery.png">
+		</li>
+		<li>
+			<img src="img/icon-ai.jpeg">
+		</li>
+		<li>
+			<img src="img/icon-ps.png">
+			</li>
+			<li>
+			<img src="img/icon-dw.jpg">
+		</li>
+		</ul>
+
+</div>
+	<!-- フッター -->
+		<footer class="wrapper">
+	<div id="fixed-btn">
+		<a href="#" onclick="$('html,body').animate({ scrollTop: 0 }); return false;" id="return-top">
+			<p>Top</p>
+		</a>
+	</div>
+	<ul>
+		<li><a href="work.html">Work.</a></li>
+		<li><a href="about.html">About.</a></li>
+	</ul>
+	<p>
+	<small>Portfolio by Chihiro Matsuda</small>
+	</p>
+</footer>
+<!-- jquery読み込み -->
+<script type="text/javascript"
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+ <script type="text/javascript">
+ 	$(function() {
+   // スクロールしたときに実行
+   $(window).scroll(function () {
+      // 目的のスクロール量を設定(px)
+      var TargetPos = 350;
+      // 現在のスクロール位置を取得
+      var ScrollPos = $(window).scrollTop();
+      // 現在位置が目的のスクロール量に達しているかどうかを判断
+      if( ScrollPos >= TargetPos) {
+         // 達していれば表示
+         $("#fixed-btn").fadeIn();
+      }
+      else {
+         // 達していなければ非表示
+         $("#fixed-btn").fadeOut();
+      }
+   });
+});
+</script>
+</body>
+</html>
