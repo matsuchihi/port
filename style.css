@@ -1,0 +1,455 @@
+@charset "UTF-8";
+/* 
+========================================
+全体の初期設定
+========================================
+*/
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+}
+img{
+	display: block;
+}
+a{
+	display: block;
+}
+
+.wrapper{
+	max-width:1260px;
+	margin: 0 auto;
+}
+
+.container{
+	margin:0 50px;
+}
+
+/* 
+========================================
+ヘッダー設定
+========================================
+*/
+header{
+	position: relative;
+    height: 270px;
+    margin: 0 auto;
+}
+header #header-logo{
+	padding-top: 80px;
+	padding-left: 50px;
+	letter-spacing: 3px;
+	font-weight: normal;
+	width: 330px;
+	height: 84px;
+}
+
+header nav{
+	position: absolute;
+	bottom: 36px;
+	right: 50px;
+}
+header nav ul li{
+	display: inline;
+}
+header nav ul li:first-child{
+	margin-right: 25px
+}
+header nav ul li a{
+	text-decoration: none;
+	color: #734e30;
+	position: relative;
+	display: inline-block;
+}
+header nav ul li a::before{
+	content: '';
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid #734e30;
+	position: absolute;
+	display: block;
+}
+header nav ul li a:hover::before{
+	width: 50%;
+	border-bottom: 2px solid #734e30;
+}
+
+header nav ul li a::after{
+	content: '';
+	width: 0;
+	right: 50%;
+	bottom: 0;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid #734e30;
+	position: absolute;
+	display: block;
+}
+header nav ul li a:hover::after{
+width: 50%;
+	border-bottom: 2px solid #734e30;
+}
+/* 
+========================================
+トップページ：メインビジュアル設定
+========================================
+*/
+.main img{
+	width: 1100px;
+	margin:0 auto;
+	height: 450px;
+}
+
+
+
+/* 
+========================================
+トップページ：作品部分の設定
+========================================
+*/
+.sakuhin{
+	width: 100%;
+	color: #555555;
+}
+#midashi{
+	color: #734e30;
+    margin-top: 115px;
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 3.75rem;
+    font-weight: normal;
+}
+.sakuhin h3{
+	font-size: 3.125rem;
+    font-weight: normal;
+    margin-bottom: 60px;
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #555555;
+}
+
+.panya ,.portfolio{
+	width: 90%;
+	display: flex;
+	margin:0 auto 200px;	
+}
+
+.left-side a{
+	display: block;
+	border: 1px solid #ddd;
+	line-height: 2px;
+	transition: all 0.5s;
+}
+.left-side a:hover{
+	opacity: 0.7
+}
+
+
+.left-side img{
+	    width: 100%;
+	    display: block;
+	    height: auto;
+}
+.left-side {
+	width: 50%;
+	margin-right: 35px;
+}
+
+
+
+.right-side{
+	position: relative;
+	width: 50%;
+	color: #555;
+}
+.right-side li{
+	margin-bottom: 5px;
+}
+.right-side h4{
+	font-size: 2.50rem;
+    line-height: 44px;
+    margin-bottom: 10px;
+   
+}
+.right-side ul{
+	position: absolute;
+	bottom: 0px;
+}
+.right-side li:nth-child(3){
+	margin-bottom: 0px;
+}
+
+/* 
+========================================
+フッター設定
+========================================
+*/
+footer{
+	padding-bottom: 50px;
+	color: #734e30;
+	position: relative;
+}
+#fixed-btn .absolute{
+	position: absolute;
+	top:-100px;
+	bottom: auto;
+	right: 60px;
+}
+
+#fixed-btn{
+	display: none;
+	position: fixed;
+    z-index: 5;
+    bottom:188px;
+    right: 60px;
+    transition: all 0.5s;
+}
+
+#fixed-btn a{
+	position: relative;
+	display: block;
+	background-color: rgba(115,78,48,0.7);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+#fixed-btn a:hover{
+	background-color: rgba(115,78,48,1);
+}
+
+#fixed-btn p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	font-size: 20px;
+	margin-top: -15px;
+    margin-left: -18.315px;
+}
+
+footer ul{
+	text-align: center;
+	margin-bottom: 70px;
+	
+}
+footer li{
+	display: inline-block;
+}
+footer li a{
+	color:#734e30;
+	position: relative;
+}
+footer li a::before{
+	content: '';
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid #734e30;
+	position: absolute;
+	display: block;
+}
+footer li a:hover::before{
+	width: 50%;
+	border-bottom: 2px solid #734e30;
+}
+
+footer li a::after{
+	content: '';
+	width: 0;
+	right: 50%;
+	bottom: 0;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid #734e30;
+	position: absolute;
+	display: block;
+}
+footer li a:hover::after{
+width: 50%;
+	border-bottom: 2px solid #734e30;
+}
+footer li:first-child{
+	margin-right: 25px;
+}
+footer p{
+	text-align: right;
+}
+footer small{
+	font-size: 80%;
+}
+
+/* 
+========================================
+Works. ページ
+========================================
+*/
+.work-wrapper{
+	width: 800px;
+	margin: 0 auto 200px;
+}
+.work-wrapper a{
+	display: block;
+	height: auto;
+	line-height: 1.37px;
+	transition: all 0.5s;
+}
+.work-wrapper a:hover{
+	opacity: 0.7;
+}
+
+.work-wrapper img{
+	max-width: 100%;
+}
+.works{
+	margin: 0 50px;
+}
+.works h2{
+	color: #734e30;
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 3.75rem;
+    font-weight: normal;
+}
+.works h3{
+	font-size: 2rem;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 60px;
+	padding: 0 20px 20px;
+	color: #555555;
+	border-bottom: 1px
+	solid #555555;
+}
+.web-info{
+	overflow: hidden;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	height: 80px;
+	align-items: top;
+}
+.web-info a{
+	display: block;
+	float: left;
+	color:#555;
+	line-height: 65px;
+}
+.web-info  h4 {
+		font-size: 2rem;
+		display: inline-block;
+}
+.web-info i{
+		padding-right: 30px;
+		font-size: 1rem;
+}
+.web-info ul{
+	display: inline-block;
+		border-left: 1px solid #555;
+		padding-left: 30px;
+
+}
+.web-info2 p{
+	margin-bottom: 20px;
+}
+.web-info2 ul{
+	padding-left: 40px;
+
+}
+
+.web-info2 li{
+	margin-bottom: 15px;
+	list-style-type: circle;
+}
+
+/* 
+========================================
+ About. ページ
+========================================
+*/
+.about h1{
+	color:#734e30;
+    margin-bottom: 75px;
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: normal;
+}
+#profile{
+	display: flex;
+	justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto 100px;
+}
+#profile-photo img{
+	width: 100%;
+	height: auto;
+}
+#profile-concept{
+	width: 40%;
+	margin-left: 30px;
+	color:#4b4d4c;
+}
+#profile-concept h2{
+	margin-bottom: 5px;
+	font-size: 2rem;
+}
+#profile-concept h3{
+	font-size: 1.25rem;
+	margin-bottom: 40px;
+
+}
+#profile-concept #kotoba{
+	margin-bottom: 10px;
+	color: #734e30;
+	font-size: 1.75rem;
+	font-weight: bold;
+}
+
+#profile2{
+	margin: 0 auto 275px;
+    width: 1000px;
+    border-left: 10px solid #e0e8e1;
+    padding-left: 20px;
+}
+
+ .profile-head{
+	width: 1000px;
+    margin: 0 auto 60px;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    padding: 0 20px 20px;
+    color: #555555;
+    border-bottom: 1px solid #555555;
+}
+#profile2 h5{
+	color: #734e30;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+#profile2 p{
+	margin-bottom: 40px;
+    color: #4b4d4c;
+    text-align: left;
+}
+#profile2 span{
+	display: block;
+}
+#skills{
+	font-size: 0;
+    display: flex;
+        width: 1000px;
+    margin: 0 auto 275px;
+}
+#skills li{
+	display: inline-block;
+	width: 25%;
+	padding: 30px;
+}
+#skills img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
