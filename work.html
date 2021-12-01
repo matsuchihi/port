@@ -6,6 +6,11 @@
 	<title>ポートフォリオ</title>
 	<!-- ブラウザ設定の初期化 -->
 	<link rel="stylesheet" href="css/ress.css">
+<!--google font 読み込み-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c1b04e277a.js" crossorigin="anonymous"></script>
 	<!-- css読み込み -->
 	<!-- スマホ -->
 	<link rel="stylesheet" href="css/sp.css" media="only screen and (max-width: 640px)">
@@ -13,13 +18,13 @@
 	<link rel="stylesheet" href="css/tb.css" media="only screen and (min-width: 641px) and (max-width: 1039px)" >
 	<!-- デスクトップ -->
 	<link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 1040px)">
-	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
 </head>
 <body>
 	<!-- ヘッダー -->
-	<header class="wrapper">
+	<header>
 		<div id="header-logo">
-			<a href="index.html"><img src="https://raw.githubusercontent.com/matsuchihi/port/b2401f83d1239ca831018b24f0d451a951d4cb93/header-logo.svg"></a>
+			<a href="index.html"><img src="img/header-logo.svg"></a>
 		</div>
 		<nav>
 			<ul>
@@ -28,90 +33,93 @@
 			</ul>
 		</nav>
 	</header>
-<!-- メイン領域 -->
-<div class="works">
-  <h2>Works.</h2>	
-  <h3>Web</h3>
-	<div class="work-wrapper">
-		<a href="https://matsuchihi.github.io/matsu/" target="_blank" id="takita">
-			<img src="https://github.com/matsuchihi/port/blob/main/panmain.png?raw=true" width="800" height="447"></a>
-		</a>
-	  <div class="web-info">
-		<a href="https://matsuchihi.github.io/matsu/" target="_blank">
-		<h4>TAKITA BEKARY</h4>
-		<i class="fas fa-file-alt"></i>
-		</a>
-		<ul>
-			<li>制作年月:2021/7</li>
-			<li>制作期間:2week</li>
-			<li>制作環境:Illustrator/Photoshop/HTML/CSS</li>
-		</ul>
-	  </div>
-	  <div class="web-info2">
-		<p>Theme | ベーカリーサイト</p>
-		<p>Concept | 米粉で作った健康志向のパン</p>
-		<p>Target | 25~35歳のお子さんがいる主婦層</p>
-		<p>Goal | お店の周知</p>
-		<p>Point | 制作の工夫、苦労したこと</p>
-		<ul>
-			<li>著作権に抵触しないように写真素材を集める</li>
-			<li>コンテンツの配置の仕方</li>
-			<li>photoshopで写真の見栄えを良くする</li>
-			<li>コンセプトに沿った文章を考える</li>
-		</ul>
-	  </div>
-    </div>
-    
-	<div class="work-wrapper">
-    	<a href="index.html">
-    		<img src="img/mainvisu.png" width="800" height="447" id="portfolio">
-    	</a>
-    	<div class="web-info">
-    		<a href="index.html">
-    			<h4>Portfolio</h4>
-    			<i class="fas fa-file-alt"></i>
-    		</a>
-    		<ul>
-    			<li>制作年月:2021/7</li>
-    			<li>制作期間:2week</li>
-    			<li>制作環境:Illustrator/Photoshop/HTML/CSS/jQuery</li>
-    		</ul>
-    	</div>
-    	<div class="web-info2">
-    		<p>Theme | ポートフォリオサイト</p>
-		<p>Concept | "これだ"と思ってもらうために</p>
-		<p>Target | web制作依頼主(クライアント)</p>
-		<p>Goal | これまでの制作物と制作者について知ってもらう</p>
-		<p>Point | 制作の工夫、苦労したこと</p>
-		<ul>
-			<li>スマホやタブレットへのレスポンシブ対応</li>
-			<li>レスポンシブ時の文章整列と折り返しの切り替え</li>
-			<li>制作物全体を掴めるようにトップページに作品一覧を並べて配置</li>
-			<li>シンプル設計で画面の読み込みスピードを意識</li>
-		</ul>
-    	</div>
-    </div>
-</div>
-<!-- フッター -->
-<footer class="wrapper">
-	<div id="fixed-btn">
-		<a href="#" onclick="$('html,body').animate({ scrollTop: 0 }); return false;" id="return-top">
-			<p>Top</p>
-		</a>
+	<!-- メイン領域 -->
+	<div class="works">
+		<h2>Works.</h2>	
+		<h3>Web</h3>
+		<div class="work-wrapper">
+			<a href="https://matsuchihi.github.io/matsu/" target="_blank" id="takita">
+				<img src="img/aspect2.png"></a>
+			</a>
+		
+			<div class="web-info">
+				<a href="https://matsuchihi.github.io/matsu/" target="_blank">
+					<h4>TAKITA BEKARY<i class="fas fa-file-alt"></i></h4>
+					
+				</a>
+			
+				<ul>
+					<li>制作年月:2021/7</li>
+					<li>制作期間:2week</li>
+					<li>制作環境:Illustrator/Photoshop/HTML/CSS</li>
+				</ul>
+			</div>
+			
+			<div class="web-info2">
+				<p>Theme | ベーカリーサイト</p>
+				<p>Concept | 米粉で作った健康志向のパン</p>
+				<p>Target | 25~35歳のお子さんがいる主婦層</p>
+				<p>Goal | お店の周知</p>
+				<p>Point | 制作の工夫、苦労したこと</p>
+				<ul>
+					<li>著作権に抵触しないように写真素材を集める</li>
+					<li>コンテンツの配置の仕方</li>
+					<li>photoshopで写真の見栄えを良くする</li>
+					<li>コンセプトに沿った文章を考える</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="work-wrapper">
+			<a href="index.html">
+				<img src="img/aspect.png" id="portfolio">
+			</a>
+			<div class="web-info">
+				<a href="index.html">
+					<h4>Portfolio<i class="fas fa-file-alt"></i></h4>
+					
+				</a>
+				<ul>
+					<li>制作年月:2021/7</li>
+					<li>制作期間:2week</li>
+					<li>制作環境:Illustrator/Photoshop/HTML/CSS/jQuery</li>
+				</ul>
+			</div>
+			<div class="web-info2">
+				<p>Theme | ポートフォリオサイト</p>
+				<p>Concept | "これだ"と思ってもらうために</p>
+				<p>Target | web制作依頼主(クライアント)</p>
+				<p>Goal | これまでの制作物と制作者について知ってもらう</p>
+				<p>Point | 制作の工夫、苦労したこと</p>
+				<ul>
+					<li>スマホやタブレットへのレスポンシブ対応</li>
+					<li>レスポンシブ時の文章整列と折り返しの切り替え</li>
+					<li>制作物全体を掴めるようにトップページに作品一覧を並べて配置</li>
+					<li>シンプル設計で画面の読み込みスピードを意識</li>
+				</ul>
+			</div>
+		</div>
 	</div>
-	<ul>
-		<li><a href="#">Work.</a></li>
-		<li><a href="about.html">About.</a></li>
-	</ul>
-	<p>
-	<small>Portfolio by Chihiro Matsuda</small>
-	</p>
-</footer>
-<!-- jquery読み込み -->
-<script type="text/javascript"
- src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
- <script type="text/javascript">
- 	$(function() {
+	<!-- フッター -->
+	<footer class="wrapper">
+		<div id="fixed-btn">
+			<a href="#" onclick="$('html,body').animate({ scrollTop: 0 }); return false;" id="return-top">
+				<p>Top</p>
+			</a>
+		</div>
+		<ul>
+			<li><a href="#">Work.</a></li>
+			<li><a href="about.html">About.</a></li>
+		</ul>
+		<p>
+			<small>Portfolio by Chihiro Matsuda</small>
+		</p>
+	</footer>
+	<!-- jquery読み込み -->
+	<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
    // スクロールしたときに実行
    $(window).scroll(function () {
       // 目的のスクロール量を設定(px)
@@ -122,12 +130,12 @@
       if( ScrollPos >= TargetPos) {
          // 達していれば表示
          $("#fixed-btn").fadeIn();
-      }
-      else {
+     }
+     else {
          // 達していなければ非表示
          $("#fixed-btn").fadeOut();
-      }
-   });
+     }
+ });
 });
 
 
