@@ -19,7 +19,6 @@ a{
 }
 
 .wrapper{
-	max-width:1260px;
 	margin: 0 auto;
 }
 .container{
@@ -91,11 +90,36 @@ width: 50%;
 トップページ：メインビジュアル設定
 ========================================
 */
-.main img{
+.main{
+	position: relative;
+	background-image: url("../img/mainvisual_sp_03.png");
+	background-size: cover;
+	background-position: center center;
 	width: 100%;
 	height: 300px;
 }
-
+.main img{
+	display: none;
+}
+.main h1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	background-color: rgba(189, 204, 195, 0.1);
+	box-shadow: 0 0 15px 15px rgb(189 204 195 / 10%);
+    box-shadow: 0 0 15px 15px rgb(189 204 195 / 10%);
+    border-radius: 80%;
+    padding:10px;
+    writing-mode: vertical-rl;
+    font-weight: normal;
+}
+.main p{
+		font-family: 'M PLUS 2', sans-serif;
+}
+.main #kaigyou{
+	padding-top:40px;
+}
 
 
 /* 
@@ -229,8 +253,8 @@ footer{
 	left: 50%;
 	color: white;
 	font-size: 20px;
-	margin-top: -15px;
-    margin-left: -18.315px;
+	margin-top: -16px;
+    margin-left: -16px;
 }
 
 footer ul{
@@ -292,7 +316,6 @@ Works. ページ
 ========================================
 */
 .work-wrapper{
-	width: 800px;
 	margin: 0 auto 200px;
 }
 .work-wrapper a{
@@ -329,15 +352,15 @@ Works. ページ
 	solid #555555;
 }
 .web-info{
-	overflow: hidden;
+	flex-direction: column;
 	margin-bottom: 30px;
 	margin-top: 30px;
-	height: 80px;
 	align-items: top;
+	display: flex;
+
 }
 .web-info a{
 	display: block;
-	float: left;
 	color:#555;
 	line-height: 65px;
 }
@@ -348,6 +371,7 @@ Works. ページ
 .web-info i{
 		padding-right: 30px;
 		font-size: 1rem;
+		margin-left: 10px;
 }
 .web-info ul{
 	display: inline-block;
@@ -381,18 +405,21 @@ Works. ページ
 }
 #profile{
 	display: flex;
-	justify-content: center;
-    max-width: 1000px;
+	flex-direction: column;
     margin: 0 auto 100px;
+    align-items: center;
+
 }
 #profile-photo img{
-	width: 100%;
+	width: 50%;
 	height: auto;
+	margin:0 auto;
 }
 #profile-concept{
-	width: 40%;
-	margin-left: 30px;
+	width: 70%;
 	color:#4b4d4c;
+	text-align: center;
+	margin-top: 20px;
 }
 #profile-concept h2{
 	margin-bottom: 5px;
@@ -411,15 +438,13 @@ Works. ページ
 }
 
 #profile2{
-	margin: 0 auto 275px;
-    width: 1000px;
+	margin: 0 20px 75px;
     border-left: 10px solid #e0e8e1;
     padding-left: 20px;
 }
 
  .profile-head{
-	width: 1000px;
-    margin: 0 auto 60px;
+    margin: 0 20px 60px;
     font-size: 2rem;
     font-weight: normal;
     text-align: center;
@@ -442,17 +467,15 @@ Works. ページ
 }
 #skills{
 	font-size: 0;
-    display: flex;
-        width: 1000px;
-    margin: 0 auto 275px;
+    margin: 0 auto 75px;
 }
 #skills li{
 	display: inline-block;
-	width: 25%;
 	padding: 30px;
+	width: 50%;
 }
 #skills img{
-	width: 100%;
 	height: auto;
 	display: block;
+	width: 100%;
 }
