@@ -5,21 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ポートフォリオ</title>
 	<!-- ブラウザ設定の初期化 -->
-	<link rel="stylesheet" href="ress.css">
+	<link rel="stylesheet" href="css/ress.css">
+<!--google font 読み込み-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@300&display=swap" rel="stylesheet">
 	<!-- css読み込み -->
 	<!-- スマホ -->
-	<link rel="stylesheet" href="sp.css" media="only screen and (max-width: 640px)">
+	<link rel="stylesheet" href="css/sp.css" media="only screen and (max-width: 640px)">
 	<!-- タブレット -->
-	<link rel="stylesheet" href="tb.css" media="only screen and (min-width: 641px) and (max-width: 1039px)" >
+	<link rel="stylesheet" href="css/tb.css" media="only screen and (min-width: 641px) and (max-width: 1039px)" >
 	<!-- デスクトップ -->
-	<link rel="stylesheet" href="style.css" media="only screen and (min-width: 1040px)">
+	<link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 1040px)">
+
+
 </head>
 
 <body>
 	<!-- ヘッダー -->
 	<header class="wrapper">
 		<div id="header-logo">
-			<a href="index.html"><img src="https://raw.githubusercontent.com/matsuchihi/port/81ec07ddd332f9c7bf3902df154bc669d373a562/header-logo.svg"></a>
+			<a href="index.html"><img src="img/header-logo.svg"></a>
 		</div>
 		
 		<nav>
@@ -31,7 +37,11 @@
 	</header>
 	<!-- メイン領域 -->	
 	<div class="main">
-		<img src="img/mainvisual_b.png">
+		<img src="img/mainsyashin.jpeg">
+	<h1>
+		<p>「これだ」と</p>
+		<p id="kaigyou">思って<br>もらうために</p>
+	</h1>
 	</div>
 	
 	<h2 id="midashi">
@@ -42,7 +52,7 @@
 			<h3>Web</h3>
 			<div class="panya">
 				<div class="left-side">
-					<a href="work.html#takita"><img src="https://github.com/matsuchihi/port/blob/main/panmain.png?raw=true"></a>
+					<a href="work.html#takita"><img src="img/aspect2.png"></a>
 				</div>
 				<div class="right-side">
 					<h4><php>TAKITA BEKARY</php></h4>
@@ -56,7 +66,7 @@
 			</div>
 				<div class="portfolio">
 					<div class="left-side">
-						<a href="work.html#portfolio"><img src="img/mainvisu.png"></a>
+						<a href="work.html#portfolio"><img src="img/aspect.png"></a>
 					</div>
 					<div class="right-side">
 						<h4>Portfolio</h4>
@@ -110,5 +120,6 @@
  });
 });
 </script>
+
 </body>
 </html>
