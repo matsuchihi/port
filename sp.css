@@ -376,9 +376,6 @@ Works. ページ
 }
 .web-info ul{
 	display: inline-block;
-		border-left: 1px solid #555;
-		padding-left: 30px;
-
 }
 .web-info li{
 	white-space:nowrap;
