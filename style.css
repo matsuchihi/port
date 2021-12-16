@@ -190,6 +190,9 @@ width: 50%;
 .right-side li{
 	margin-bottom: 5px;
 }
+.right-side li br{
+	display:none;
+}
 .right-side h4{
 	font-size: 2.50rem;
     line-height: 44px;
@@ -372,6 +375,9 @@ Works. ページ
 		border-left: 1px solid #555;
 		padding-left: 30px;
 
+}
+.web-info li br{
+	display:none;
 }
 .web-info2 p{
 	margin-bottom: 20px;
