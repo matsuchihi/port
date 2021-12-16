@@ -192,6 +192,7 @@ width: 50%;
 }
 .right-side li{
 	margin-bottom: 2px;
+	white-space:nowrap;
 }
 .right-side h4{
 	font-size: 1.3rem;
@@ -378,6 +379,9 @@ Works. ページ
 		border-left: 1px solid #555;
 		padding-left: 30px;
 
+}
+.web-info li{
+	white-space:nowrap;
 }
 .web-info2 p{
 	margin-bottom: 20px;
